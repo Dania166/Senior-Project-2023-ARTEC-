@@ -1,0 +1,38 @@
+<!-- classification_results.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Classification Results</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Text Classification Results</h1>
+  <table>
+    <tr>
+      <th>File Name</th>
+      <th>Classification Result</th>
+    </tr>
+    {% for file, result in results %}
+    <tr>
+      <td>{{ file }}</td>
+      <td>{{ result }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+
+
+
+
